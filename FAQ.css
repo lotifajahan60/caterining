@@ -1,0 +1,62 @@
+*{
+	box-sizing:0;
+}
+body{
+	margin:0;
+}
+.banner{
+	width:100%;
+	background-color: #000053;
+	padding: 5px;
+	color: white;
+	text-align: center;
+}
+.navbr{
+	overflow: hidden;
+	background-color: #1c1c84;
+}
+.navbr a {
+	float: left;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.active_nav{
+	background-color: #04AA6D;
+}
+.navbr a:hover{
+	background-color: #f4efef;
+	color: black;
+}
+.collapsible{
+	background-color: #8e93f9;
+	color: rgb(68, 67, 68);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+.activefaq, .collapsible:hover{
+	background-color: #10b2aa;
+}
+.collapsible::after{
+	content: '\002B';
+	color: rgb(26, 25, 25);
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+.activefaq:after{
+	content: "\2212";
+}
+.content{
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #7269f7;
+}

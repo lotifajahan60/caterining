@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+	
+</head>
+<body>
+<div class="banner">
+	<h1>Lija's Catering Service</h1>
+	<p>Sariakandi,Bogura.</p>
+	<div>
+		<p class="" style="font-size: 30px; font-weight: bold;" id="clock"></p>
+		<p class="" style="font-size: 30px; font-weight: bold;" id="date"></p>
+	   </div>
+</div>
+<div class="navbr">
+	<a href="index.html" class="active_nav">Home</a>
+		<a href="about.html" >About</a>
+		<a href="contact.html">Contact</a>
+		<a href="FAQ.html">FAQ</a>
+	</div>
+	<hr>
+	<h3 style="color: green; text-align: center;">Frequently Asked Question</h3>
+
+	<button class="collapsible">What types of events do you cater for?</button>
+
+	<div class="content">
+		<p>
+			We strictly monitor the good hygiene factors - Cross-contamination.	We strictly monitor the good hygiene factors - Cross-contamination.	
+		</p>
+		
+	</div>
+
+	<button class="collapsible">Can you accommodate dietary restrictions and special requests?</button>
+	<div class="content">
+		<p>
+			Yes, we understand the importance of catering to dietary restrictions and special requests. 
+			We offer a variety of menu options to accommodate various dietary needs including vegetarian, vegan, gluten-free, and allergy-specific options.
+		</p>	
+	</div>
+
+<button class="collapsible">How far in advance should I book your catering services?</button>
+	<div class="content">
+		<p>
+			We recommend booking our catering services as early as possible to ensure availability, especially for large events.
+			<br>Typically, booking at least 2-3 months in advance is advisable, but we can often accommodate last-minute requests depending on availability.
+		</p>
+	</div>
+
+
+<button class="collapsible">Do you provide staff for the event?</button>
+	<div class="content">
+		<p>
+			Yes, we provide experienced and professional staff including servers, bartenders, chefs, and event coordinators to ensure your event runs smoothly from start to finish.
+		</p>	
+	</div>
+
+
+<button class="collapsible">Can you assist with event planning and coordination?</button>
+	<div class="content">
+		<p>
+			Absolutely! In addition to catering services, we offer event planning and coordination assistance to help you with every aspect of your event, from venue selection to décor and entertainment.
+    
+            Feel free to adjust these questions and answers to better fit your specific catering service offerings and policies!
+		</p>
+		
+	</div>
+	<footer>
+        <p>Catering Service<br>
+          12,june,2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+	<script src="clock.js"></script>
+	
+</body>
+</html>
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i=0; i < coll.length; i++){
+		coll[i].addEventListener("click", function(){
+			this.classList.toggle("activefaq");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+		
+			}
+		});
+	}
+</script>
